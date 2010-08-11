@@ -8,20 +8,12 @@
             permission="zope2.View"
             interface=".interfaces.IFaqEntry"
             />
-        <require
-            permission="cmf.ModifyPortalContent"
-            set_schema=".interfaces.IFaqEntry"
-            />
     </class>
     
     <class class=".FaqFolder.FaqFolder">
         <require
             permission="zope2.View"
             interface=".interfaces.IFaqFolder"
-            />
-        <require
-            permission="cmf.ModifyPortalContent"
-            set_schema=".interfaces.IFaqFolder"
             />
     </class>
 </configure>

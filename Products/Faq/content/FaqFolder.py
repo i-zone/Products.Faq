@@ -33,6 +33,7 @@ class FaqFolder(OrderedBaseFolder):
 
     implements(IFaqFolder)
 
+    meta_type = "FaqFolder"
     schema = schema
     _at_rename_after_creation = True
 

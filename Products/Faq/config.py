@@ -1,13 +1,9 @@
-#from Products.Archetypes.public import DisplayList
+"""Common configuration constants
+"""
 
-#ADD_CONTENT_PERMISSION = AddPortalContent
+PROJECTNAME = "Products.Faq"
+
 ADD_PERMISSIONS = {
     'FaqEntry': 'Products.Faq: Add FaqEntry',
     'FaqFolder': 'Products.Faq: Add FaqFolder',
 }
-PROJECTNAME = "Faq"
-#SKINS_DIR = 'skins'
-#WORKFLOW_DEFAULT  = '(Default)'
-#WORKFLOW_FOLDER = 'intranet_workflow'
-
-#GLOBALS = globals()

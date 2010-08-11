@@ -57,6 +57,7 @@ class FaqEntry(BaseContent):
 
     implements(IFaqEntry)
 
+    meta_type = "FaqEntry"
     schema = schema
     _at_rename_after_creation = True
 
