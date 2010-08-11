@@ -5,12 +5,11 @@
 
   <include package="Products.GenericSetup" file="meta.zcml" />
 
-
   <genericsetup:registerProfile
       name="default"
       title="Faq"
       directory="profiles/default"
-      description="Extension profile for humanitasportaal.contenttypes."
+      description="Extension profile for Faq module."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
