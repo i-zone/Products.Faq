@@ -2,13 +2,13 @@
 <object name="FaqEntry"
         meta_type="Factory-based Type Information"
         xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-        i18n:domain="plone">
+        i18n:domain="faq">
         
- <property name="title">label_type_faqentry</property>
- <property name="description">desc_type_faqentry</property>
+ <property name="title" i18n:translate="label_type_faqentry">FAQ entry</property>
+ <property name="description" i18n:translate="desc_type_faqentry">Frequently asked question</property>
  <property name="content_icon">faq_icon.gif</property>
  <property name="content_meta_type">FaqEntry</property>
- <property name="product">Faq</property>
+ <property name="product">Products.Faq</property>
  <property name="factory">addFaqEntry</property>
  <property name="immediate_view">base_edit</property>
  <property name="global_allow">False</property>

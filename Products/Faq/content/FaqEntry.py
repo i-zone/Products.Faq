@@ -2,36 +2,14 @@
 
 from interfaces import IFaqEntry
 from zope.interface import implements
-from Products.Archetypes.public import Schema, StringWidget, TextAreaWidget, \
-    VisualWidget, registerType, StringField, TextField, BaseSchema, \
-     BaseContent
+from Products.ATContentTypes.atct import ATCTContent, ATContentTypeSchema
+from Products.Archetypes.public import Schema, \
+                                       RichWidget, registerType, TextField
 
+from Products.Faq import config
+from Products.Faq import faqMessageFactory as _
 
-schema = BaseSchema + Schema((
-
-    StringField('title',
-                required=1,
-                searchable=1,
-                default='',
-                accessor='Title',
-                widget=StringWidget(label_msgid="label_question",
-                            label='Question',
-                            description="The frequently asked question.",
-                            description_msgid="desc_question",
-                            i18n_domain="faq"),
-                ),
-
-   TextField('description',
-             required=0,
-             searchable=1,
-             accessor='Description',
-             widget=TextAreaWidget(label='Detailed Question',
-                   label_msgid='label_detailed_question',
-                   description='More details on the question, ' +\
-                    'if not evident from the title.',
-                   description_msgid="desc_detailed_question",
-                   i18n_domain='faq'),
-             ),
+schema = ATContentTypeSchema.copy() + Schema((
 
     TextField('answer',
               primary=1,
@@ -39,27 +17,31 @@ schema = BaseSchema + Schema((
               searchable=1,
               default_content_type="text/html",
               default_output_type='text/x-html-safe',
-              allowable_content_types=("text/plain", "text/structured",
-                                         "text/restructured", "text/html"),
-              widget=VisualWidget(label='Answer',
-                      label_msgid="label_answer",
-                      description="Meaningful sentences that " + \
-                          "explains the answer.",
-                      description_msgid="desc_answer",
-                      i18n_domain="faq",
+              allowable_content_types=("text/plain", "text/html"),
+              widget=RichWidget(
+                      label=_(_(u'label_answer'), default=u'Answer'),
+                      description=_(u"desc_answer", 
+                                   default=u"Meaningful sentences that " + \
+                                           u"explains the answer."),
                       width='100%',
                       rows=10),
               ),
     ))
 
 
-class FaqEntry(BaseContent):
+schema['title'].widget.label = _(u'label_question', default=u'Question')
+schema['title'].widget.description = _(u'desc_question', 
+                                       default=u'The frequently asked question.')
+
+schema['description'].widget.label = _(u'label_detailed_question',
+                                       default=u'Detailed Question')
+schema['description'].widget.description = _(u'desc_detailed_question',
+                                     default=u'More details on the question, '
+                                             u'if not evident from the title.')
+
+class FaqEntry(ATCTContent):
 
     implements(IFaqEntry)
-
-    meta_type = "FaqEntry"
     schema = schema
-    _at_rename_after_creation = True
 
-
-registerType(FaqEntry, 'Products.Faq')
+registerType(FaqEntry, config.PROJECTNAME)
