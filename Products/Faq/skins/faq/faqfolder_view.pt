@@ -57,7 +57,7 @@
 </script>
 </metal:javascriptslot>
 
-<metal:cssslot fill-slot="css_slot">
+<metal:cssslot fill-slot="style_slot">
 <style type="text/css">
 .faq_question {
         margin-left: 1em;
