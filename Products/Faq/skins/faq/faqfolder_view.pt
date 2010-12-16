@@ -106,7 +106,7 @@
                        onmouseover string:javascript:overLinkStyle('icon_${items}');
                        onmouseout string:javascript:outLinkStyle('icon_${items}')" />
             <tal:block condition="python: (md + delay).toZone('GMT+2').greaterThan(datenow)">
-            <img i18n:attributes="alt new; title new" alt="New" title="New" src="" tal:attributes="src string:$portal_url/new.gif"/>
+            <img i18n:attributes="alt new; title new" class="new" alt="New" title="New" src="" tal:attributes="src string:$portal_url/new.gif"/>
             </tal:block>
           <a href="#" tal:content="entry/Title" tal:attributes="href string:javascript:toggle('${items}');">Title</a>
         </dt>
@@ -132,7 +132,7 @@
                        onmouseover string:javascript:overLinkStyle('icon_${items}');
                        onmouseout string:javascript:outLinkStyle('icon_${items}')" />
             <tal:block condition="python: (md + delay).toZone('GMT+2').greaterThan(datenow)">
-            <img alt="Icone new" src="" tal:attributes="src string:$portal_url/new.gif"/>
+            <img alt="Icon new" src="" tal:attributes="src string:$portal_url/new.gif"/>
             </tal:block>
           <a href="#" tal:content="subentry/Title" tal:attributes="href string:javascript:toggle('${items}');">Title</a>
         </dt>
