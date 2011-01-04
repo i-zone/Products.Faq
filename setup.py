@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1.2dev'
+version = '1.1.2'
 
 setup(name='Products.Faq',
       version=version,
@@ -13,8 +13,8 @@ setup(name='Products.Faq',
         ],
       keywords='',
       author='Four Digits',
-      author_email='',
-      url='',
+      author_email='info@fourdigits.nl',
+      url='http://svn.plone.org/svn/collective/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['Products'],
