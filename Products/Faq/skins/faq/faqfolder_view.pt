@@ -119,6 +119,7 @@
          <div tal:repeat="folder python:[brain.getObject() for brain in here.getFolderContents(contentFilter={'portal_type' :['FaqFolder']})]">
             <h2><a href="" tal:content="folder/Title"
                        tal:attributes="href string:${folder/absolute_url}">Folder title</a></h2>
+            <p tal:condition="folder/Description|nothing" tal:content="folder/Description" />
 
      <dl tal:define="subentries python:[brain.getObject() for brain in folder.getFolderContents(contentFilter={'portal_type' :['FaqEntry']})]" tal:condition="subentries">
          <tal:entries repeat="subentry subentries">
