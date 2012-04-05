@@ -13,6 +13,9 @@ from Products.CMFCore import utils
 
 faqMessageFactory = MessageFactory('faq')
 
+# provide aliases for old class locations to ensure backwards
+# compatibility
+import modulealiases
 
 def initialize(context):
     """Initializer called when used as a Zope 2 product.
