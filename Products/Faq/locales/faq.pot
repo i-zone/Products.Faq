@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-04-05 07:07+0000\n"
+"POT-Creation-Date: 2012-04-05 10:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,22 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: faq\n"
+
+#: ./profiles/default/types/FaqFolder.xml
+msgid "FAQ Folder"
+msgstr ""
+
+#: ./profiles/default/types/FaqEntry.xml
+msgid "FAQ entry"
+msgstr ""
+
+#: ./profiles/default/types/FaqFolder.xml
+msgid "Folder for FAQ items"
+msgstr ""
+
+#: ./profiles/default/types/FaqEntry.xml
+msgid "Frequently asked question"
+msgstr ""
 
 #. Default: "Meaningful sentences that explains the answer."
 #: ./content/FaqEntry.py:23
@@ -42,16 +58,6 @@ msgstr ""
 msgid "desc_question"
 msgstr ""
 
-#. Default: "Folder for FAQ items"
-#: ./profiles/default/types/FaqFolder.xml
-msgid "desc_type_faq"
-msgstr ""
-
-#. Default: "Frequently asked question"
-#: ./profiles/default/types/FaqEntry.xml
-msgid "desc_type_faqentry"
-msgstr ""
-
 #: ./content/FaqEntry.py:22
 msgid "label_answer"
 msgstr ""
@@ -74,16 +80,6 @@ msgstr ""
 #. Default: "Question"
 #: ./content/FaqEntry.py:32
 msgid "label_question"
-msgstr ""
-
-#. Default: "FAQ Folder"
-#: ./profiles/default/types/FaqFolder.xml
-msgid "label_type_faq"
-msgstr ""
-
-#. Default: "FAQ entry"
-#: ./profiles/default/types/FaqEntry.xml
-msgid "label_type_faqentry"
 msgstr ""
 
 #. Default: "New"

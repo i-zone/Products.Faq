@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-04-05 07:07+0000\n"
+"POT-Creation-Date: 2012-04-05 10:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -9,6 +9,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 "Preferred-Encodings: utf-8 latin1\n"
+
+#. Default: "FAQ Folder"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "FAQ Folder"
+msgstr "FAQ"
+
+#. Default: "FAQ entry"
+#: ./profiles/default/types/FaqEntry.xml
+msgid "FAQ entry"
+msgstr "Question"
+
+#. Default: "Folder for FAQ items"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "Folder for FAQ items"
+msgstr "Une Foire Aux Questions."
+
+#. Default: "Frequently asked question"
+#: ./profiles/default/types/FaqEntry.xml
+msgid "Frequently asked question"
+msgstr "Une question avec sa réponse."
 
 #. Default: "Meaningful sentences that explains the answer."
 #: ./content/FaqEntry.py:23
@@ -35,16 +55,6 @@ msgstr "La description de la FAQ."
 msgid "desc_question"
 msgstr "L'intitulé court de la question."
 
-#. Default: "Folder for FAQ items"
-#: ./profiles/default/types/FaqFolder.xml
-msgid "Folder for FAQ items"
-msgstr "Une Foire Aux Questions."
-
-#. Default: "Frequently asked question"
-#: ./profiles/default/types/FaqEntry.xml
-msgid "Frequently asked question"
-msgstr "Une question avec sa réponse."
-
 #: ./content/FaqEntry.py:22
 msgid "label_answer"
 msgstr "Réponse"
@@ -67,16 +77,6 @@ msgstr "Description"
 #. Default: "Question"
 #: ./content/FaqEntry.py:32
 msgid "label_question"
-msgstr "Question"
-
-#. Default: "FAQ Folder"
-#: ./profiles/default/types/FaqFolder.xml
-msgid "FAQ Folder"
-msgstr "FAQ"
-
-#. Default: "FAQ entry"
-#: ./profiles/default/types/FaqEntry.xml
-msgid "FAQ entry"
 msgstr "Question"
 
 #. Default: "New"

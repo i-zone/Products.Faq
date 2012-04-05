@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-04-05 07:07+0000\n"
+"POT-Creation-Date: 2012-04-05 10:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -9,6 +9,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 "Preferred-Encodings: utf-8 latin1\n"
+
+#. Default: "FAQ Folder"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "FAQ Folder"
+msgstr "FAQ (Veel gestelde vragen)"
+
+#. Default: "FAQ entry"
+#: ./profiles/default/types/FaqEntry.xml
+msgid "FAQ entry"
+msgstr "Vraag"
+
+#. Default: "Folder for FAQ items"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "Folder for FAQ items"
+msgstr "Veel gestelde vragen."
+
+#. Default: "Frequently asked question"
+#: ./profiles/default/types/FaqEntry.xml
+msgid "Frequently asked question"
+msgstr "Een vraag met bijbehorend antwoord."
 
 #. Default: "Meaningful sentences that explains the answer."
 #: ./content/FaqEntry.py:23
@@ -35,16 +55,6 @@ msgstr "De FAQ (Veel gestelde vragen) omschijving."
 msgid "desc_question"
 msgstr "De beknopte versie van de vraag."
 
-#. Default: "Folder for FAQ items"
-#: ./profiles/default/types/FaqFolder.xml
-msgid "Folder for FAQ items"
-msgstr "Veel gestelde vragen."
-
-#. Default: "Frequently asked question"
-#: ./profiles/default/types/FaqEntry.xml
-msgid "Frequently asked question"
-msgstr "Een vraag met bijbehorend antwoord."
-
 #: ./content/FaqEntry.py:22
 msgid "label_answer"
 msgstr "Antwoord"
@@ -68,16 +78,6 @@ msgstr "Omschrijving"
 #: ./content/FaqEntry.py:32
 msgid "label_question"
 msgstr "Vraag (beknopt)"
-
-#. Default: "FAQ Folder"
-#: ./profiles/default/types/FaqFolder.xml
-msgid "FAQ Folder"
-msgstr "FAQ (Veel gestelde vragen)"
-
-#. Default: "FAQ entry"
-#: ./profiles/default/types/FaqEntry.xml
-msgid "FAQ entry"
-msgstr "Vraag"
 
 #. Default: "New"
 #: ./skins/faq/faqfolder_view.pt:109
