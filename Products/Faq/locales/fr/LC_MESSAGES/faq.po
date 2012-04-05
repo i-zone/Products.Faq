@@ -37,12 +37,12 @@ msgstr "L'intitulé court de la question."
 
 #. Default: "Folder for FAQ items"
 #: ./profiles/default/types/FaqFolder.xml
-msgid "desc_type_faq"
+msgid "Folder for FAQ items"
 msgstr "Une Foire Aux Questions."
 
 #. Default: "Frequently asked question"
 #: ./profiles/default/types/FaqEntry.xml
-msgid "desc_type_faqentry"
+msgid "Frequently asked question"
 msgstr "Une question avec sa réponse."
 
 #: ./content/FaqEntry.py:22
@@ -71,12 +71,12 @@ msgstr "Question"
 
 #. Default: "FAQ Folder"
 #: ./profiles/default/types/FaqFolder.xml
-msgid "label_type_faq"
+msgid "FAQ Folder"
 msgstr "FAQ"
 
 #. Default: "FAQ entry"
 #: ./profiles/default/types/FaqEntry.xml
-msgid "label_type_faqentry"
+msgid "FAQ entry"
 msgstr "Question"
 
 #. Default: "New"

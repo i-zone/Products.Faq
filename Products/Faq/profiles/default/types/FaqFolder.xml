@@ -4,8 +4,8 @@
         xmlns:i18n="http://xml.zope.org/namespaces/i18n"
         i18n:domain="faq">
         
- <property name="title" i18n:translate="label_type_faq">FAQ Folder</property>
- <property name="description" i18n:translate="desc_type_faq">Folder for FAQ items</property>
+ <property name="title" i18n:translate="">FAQ Folder</property>
+ <property name="description" i18n:translate="">Folder for FAQ items</property>
  <property name="content_icon">faqfolder_icon.gif</property>
  <property name="content_meta_type">FaqFolder</property>
  <property name="product">Products.Faq</property>

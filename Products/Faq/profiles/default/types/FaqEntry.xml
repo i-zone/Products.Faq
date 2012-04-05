@@ -4,8 +4,8 @@
         xmlns:i18n="http://xml.zope.org/namespaces/i18n"
         i18n:domain="faq">
         
- <property name="title" i18n:translate="label_type_faqentry">FAQ entry</property>
- <property name="description" i18n:translate="desc_type_faqentry">Frequently asked question</property>
+ <property name="title" i18n:translate="">FAQ entry</property>
+ <property name="description" i18n:translate="">Frequently asked question</property>
  <property name="content_icon">faq_icon.gif</property>
  <property name="content_meta_type">FaqEntry</property>
  <property name="product">Products.Faq</property>
