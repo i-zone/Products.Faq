@@ -1,0 +1,3 @@
+recusive-include Products *
+recusive-include docs *.txt
+include *.rst

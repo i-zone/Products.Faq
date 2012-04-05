@@ -5,13 +5,18 @@ version = '1.1.3dev'
 
 setup(name='Products.Faq',
       version=version,
-      description="",
-      long_description=open("README.txt").read() + "\n" +
+      description="FAQ - An AT contenttype for Plone",
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
         "Programming Language :: Python",
+        "Framework :: Plone",
+        "Framework :: Plone :: 4.0",
+        "Framework :: Plone :: 4.1",
+        "Framework :: Plone :: 4.2",
+        "Framework :: Plone :: 4.3",
         ],
-      keywords='',
+      keywords='FAQ Archetypes Plone Contenttype',
       author='Four Digits',
       author_email='info@fourdigits.nl',
       url='http://svn.plone.org/svn/collective/',
