@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.Faq\n"
-"POT-Creation-Date: 2010-10-01 13:03+0000\n"
+"POT-Creation-Date: 2012-04-05 07:07+0000\n"
 "PO-Revision-Date: 2012-04-05 09:04+0100\n"
 "Last-Translator: Tom Gross <thomasmichael.gross@fhnw.ch>\n"
 "MIME-Version: 1.0\n"
@@ -9,30 +9,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Language-Team: \n"
 
 #. Default: "Meaningful sentences that explains the answer."
-#: ./content/FaqEntry.py:22
+#: ./content/FaqEntry.py:23
 msgid "desc_answer"
 msgstr "Antwort auf die Frage."
 
 #. Default: "Delay for a new item."
-#: ./content/FaqFolder.py:19
+#: ./content/FaqFolder.py:16
 msgid "desc_delay"
 msgstr "Verzögerung für ein neues Element."
 
 #. Default: "More details on the question, if not evident from the title."
-#: ./content/FaqEntry.py:37
+#: ./content/FaqEntry.py:38
 msgid "desc_detailed_question"
 msgstr "Weitere Details der Frage, die nicht aus dem Titel hervorgehen."
 
 #. Default: "The description of the FAQ category."
-#: ./content/FaqFolder.py:14
+#: ./content/FaqFolder.py:27
 msgid "desc_folder"
 msgstr "Die Beschreibung der FAQ Kategorie."
 
 #. Default: "The frequently asked question."
-#: ./content/FaqEntry.py:32
+#: ./content/FaqEntry.py:33
 msgid "desc_question"
 msgstr "Die häufig gestellte Frage."
 
@@ -46,27 +45,27 @@ msgstr "Ordner für häufig gestellte Fragen"
 msgid "desc_type_faqentry"
 msgstr "Häufig gestellte Frage"
 
-#: ./content/FaqEntry.py:21
+#: ./content/FaqEntry.py:22
 msgid "label_answer"
 msgstr "Antwort"
 
 #. Default: "Delay"
-#: ./content/FaqFolder.py:21
+#: ./content/FaqFolder.py:18
 msgid "label_delay"
 msgstr "Verzögerung"
 
 #. Default: "Detailed Question"
-#: ./content/FaqEntry.py:35
+#: ./content/FaqEntry.py:36
 msgid "label_detailed_question"
 msgstr "Detailierte Frage"
 
 #. Default: "Description"
-#: ./content/FaqFolder.py:16
+#: ./content/FaqFolder.py:26
 msgid "label_folder"
 msgstr "Beschreibung"
 
 #. Default: "Question"
-#: ./content/FaqEntry.py:31
+#: ./content/FaqEntry.py:32
 msgid "label_question"
 msgstr "Frage"
 

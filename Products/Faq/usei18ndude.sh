@@ -6,7 +6,7 @@ PRODUCT="faq"
 
 # if you want to add new language, add the language to the following list (separated by space)
 # English language should be present even it is never translated
-LANGUAGES='cs en fr nl'
+LANGUAGES='cs en fr nl de'
 for lang in $LANGUAGES; do
     mkdir -p locales/$lang/LC_MESSAGES/
     touch locales/$lang/LC_MESSAGES/$PRODUCT.po

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-10-01 13:03+0000\n"
+"POT-Creation-Date: 2012-04-05 07:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -11,27 +11,27 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 
 #. Default: "Meaningful sentences that explains the answer."
-#: ./content/FaqEntry.py:22
+#: ./content/FaqEntry.py:23
 msgid "desc_answer"
 msgstr ""
 
 #. Default: "Delay for a new item."
-#: ./content/FaqFolder.py:19
+#: ./content/FaqFolder.py:16
 msgid "desc_delay"
 msgstr ""
 
 #. Default: "More details on the question, if not evident from the title."
-#: ./content/FaqEntry.py:37
+#: ./content/FaqEntry.py:38
 msgid "desc_detailed_question"
 msgstr ""
 
 #. Default: "The description of the FAQ category."
-#: ./content/FaqFolder.py:14
+#: ./content/FaqFolder.py:27
 msgid "desc_folder"
 msgstr ""
 
 #. Default: "The frequently asked question."
-#: ./content/FaqEntry.py:32
+#: ./content/FaqEntry.py:33
 msgid "desc_question"
 msgstr ""
 
@@ -45,27 +45,27 @@ msgstr ""
 msgid "desc_type_faqentry"
 msgstr ""
 
-#: ./content/FaqEntry.py:21
+#: ./content/FaqEntry.py:22
 msgid "label_answer"
 msgstr ""
 
 #. Default: "Delay"
-#: ./content/FaqFolder.py:21
+#: ./content/FaqFolder.py:18
 msgid "label_delay"
 msgstr ""
 
 #. Default: "Detailed Question"
-#: ./content/FaqEntry.py:35
+#: ./content/FaqEntry.py:36
 msgid "label_detailed_question"
 msgstr ""
 
 #. Default: "Description"
-#: ./content/FaqFolder.py:16
+#: ./content/FaqFolder.py:26
 msgid "label_folder"
 msgstr ""
 
 #. Default: "Question"
-#: ./content/FaqEntry.py:31
+#: ./content/FaqEntry.py:32
 msgid "label_question"
 msgstr ""
 
