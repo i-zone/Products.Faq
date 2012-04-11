@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1.3dev'
+version = '1.2dev'
 
 setup(name='Products.Faq',
       version=version,
@@ -19,7 +19,7 @@ setup(name='Products.Faq',
       keywords='FAQ Archetypes Plone Contenttype',
       author='Four Digits',
       author_email='info@fourdigits.nl',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/tomgross/Products.Faq',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['Products'],

@@ -1,5 +1,11 @@
+===================
 Products.Faq README
 ===================
+
+.. contents::
+
+Introduction
+------------
 
 This product is a simple Faq content type for Plone. It provides the following features:
 
@@ -17,6 +23,8 @@ Requirements
 ------------
 
    * Plone 4.0 or later (probably it works with Plone 3 but was not tested)
+
+   * for testing plone.app.testing is needed
 
 Credits
 -------
