@@ -22,7 +22,6 @@
       handler=".migrations.upgrade_1000_to_1001"
       />
 
-  <!-- Migration profiles -->
   <gs:upgradeStep
       sortkey="1"
       source="1000"
