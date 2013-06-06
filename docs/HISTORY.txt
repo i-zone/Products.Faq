@@ -13,6 +13,9 @@ Changelog
 - Added Italian translation
   [cekk]
 
+- Plone 4.3 compatibility
+  [tom_gross]
+
 1.2 (2012-04-11)
 ----------------
 
