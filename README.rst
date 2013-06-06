@@ -4,6 +4,8 @@ Products.Faq README
 
 .. contents::
 
+.. image:: https://api.travis-ci.org/collective/Products.Faq.png
+
 Introduction
 ============
 
