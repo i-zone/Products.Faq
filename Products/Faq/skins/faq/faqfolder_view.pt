@@ -91,28 +91,29 @@
 
         <div tal:replace="structure provider:plone.abovecontentbody" />
 
-     <tal:faq define="global items python:0">
-     <button class="context" i18n:translate="toggle_all" onclick="toggle_all(items)">Show/Hide all</button>
+     <tal:faq define="faqs python:context.getFolderContents(contentFilter={'portal_type' :['FaqEntry']});
+                      items python:len(faqs);
+                      DateTime python:modules['DateTime'].DateTime;
+                      datenow python: DateTime();">
+     <button class="context" i18n:translate="toggle_all" onclick="toggle_all(items)" tal:attributes="onclick python:'toggle_all(%s)' % items">Show/Hide all</button>
      <dl>
-         <tal:entries repeat="entry python:[brain.getObject() for brain in here.getFolderContents(contentFilter={'portal_type' :['FaqEntry']})]">
-            <tal:block define="DateTime python:modules['DateTime'].DateTime;datenow python: DateTime(); global items python:items + 1">
+         <tal:entries repeat="entry python:[brain.getObject() for brain in faqs]">
             <dt tal:define="md python:DateTime(entry.ModificationDate());
-                                 delay here/delay">
+                            delay here/delay;">
           <img i18n:attributes="title showhide_answer;alt showhide_answer" title="Show or Hide answer"
                alt="Show or Hide answer"
-               tal:attributes="id string:icon_${items};
-                               onclick string:javascript:toggle('${items}');
+               tal:attributes="id string:icon_${repeat/entry/number};
+                               onclick string:javascript:toggle('${repeat/entry/number}');
                        src string:${portal_url}/treeCollapsed.gif;
-                       onmouseover string:javascript:overLinkStyle('icon_${items}');
-                       onmouseout string:javascript:outLinkStyle('icon_${items}')" />
-            <tal:block condition="python: (md + delay).toZone('GMT+2').greaterThan(datenow)">
-            <img i18n:attributes="alt new; title new" class="new" alt="New" title="New" src="" tal:attributes="src string:$portal_url/new.gif"/>
-            </tal:block>
-          <a href="#" tal:content="entry/Title" tal:attributes="href string:javascript:toggle('${items}');">Title</a>
+                       onmouseover string:javascript:overLinkStyle('icon_${repeat/entry/number}');
+                       onmouseout string:javascript:outLinkStyle('icon_${repeat/entry/number}')" />
+            <img i18n:attributes="alt new; title new" class="new" alt="New" title="New" src="" tal:attributes="src string:$portal_url/new.gif"
+                 tal:condition="python: (md + delay).toZone('GMT+2').greaterThan(datenow)"/>
+          <a href="#" tal:content="entry/Title" tal:attributes="href string:javascript:toggle('${repeat/entry/number}');">Title</a>
         </dt>
         <dd class="faq_question" tal:content="entry/Description">Question</dd>
-        <dd class="faq_answer" tal:attributes="id string:faq_${items}" tal:content="structure entry/getAnswer">Answer</dd>
-          </tal:block>
+        <dd class="faq_answer" tal:attributes="id string:faq_${repeat/entry/number}" tal:content="structure entry/getAnswer">Answer</dd>
+
           </tal:entries>
          </dl>
 
@@ -123,23 +124,21 @@
 
      <dl tal:define="subentries python:[brain.getObject() for brain in folder.getFolderContents(contentFilter={'portal_type' :['FaqEntry']})]" tal:condition="subentries">
          <tal:entries repeat="subentry subentries">
-         <tal:block define="DateTime python:modules['DateTime'].DateTime;datenow python: DateTime(); global items python:items + 1">
                  <dt tal:define="md python:DateTime(subentry.ModificationDate());
                                  delay here/delay">
           <img i18n:attributes="title showhide_answer" title="Show or Hide answer"
-               tal:attributes="id string:icon_${items};
-                               onclick string:javascript:toggle('${items}');
+               tal:attributes="id string:icon_${item};
+                               onclick string:javascript:toggle('${item}');
                        src string:${portal_url}/treeCollapsed.gif;
-                       onmouseover string:javascript:overLinkStyle('icon_${items}');
-                       onmouseout string:javascript:outLinkStyle('icon_${items}')" />
-            <tal:block condition="python: (md + delay).toZone('GMT+2').greaterThan(datenow)">
-            <img alt="Icon new" src="" tal:attributes="src string:$portal_url/new.gif"/>
-            </tal:block>
-          <a href="#" tal:content="subentry/Title" tal:attributes="href string:javascript:toggle('${items}');">Title</a>
+                       onmouseover string:javascript:overLinkStyle('icon_${item}');
+                       onmouseout string:javascript:outLinkStyle('icon_${item}')" />
+            <img alt="Icon new" src="" tal:attributes="src string:$portal_url/new.gif"
+                 tal:condition="python: (md + delay).toZone('GMT+2').greaterThan(datenow)"/>
+          <a href="#" tal:content="subentry/Title" tal:attributes="href string:javascript:toggle('${item}');">Title</a>
         </dt>
         <dd class="faq_question" tal:content="subentry/Description">Question</dd>
-        <dd class="faq_answer" tal:attributes="id string:faq_${items}" tal:content="structure subentry/getAnswer">Answer</dd>
-          </tal:block>
+        <dd class="faq_answer" tal:attributes="id string:faq_${item}" tal:content="structure subentry/getAnswer" tal:on-error="nothing">Answer</dd>
+
           </tal:entries>
      </dl>
      </div>

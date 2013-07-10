@@ -16,6 +16,9 @@ Changelog
 - Plone 4.3 compatibility
   [tom_gross]
 
+- Fixed and simplified JS toggle code in folder view
+  [tom_gross]
+
 1.2 (2012-04-11)
 ----------------
 
