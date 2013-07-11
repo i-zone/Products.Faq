@@ -4,8 +4,20 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Test by travis
+  [tom_gross]
 
+- Added rolemap. Now Contributors can add FaqEntries and FaqFolders
+  [cekk]
+
+- Added Italian translation
+  [cekk]
+
+- Plone 4.3 compatibility
+  [tom_gross]
+
+- Fixed and simplified JS toggle code in folder view
+  [tom_gross]
 
 1.2 (2012-04-11)
 ----------------

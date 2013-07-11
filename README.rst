@@ -4,6 +4,8 @@ Products.Faq README
 
 .. contents::
 
+.. image:: https://travis-ci.org/tomgross/Products.Faq.png
+
 Introduction
 ============
 
