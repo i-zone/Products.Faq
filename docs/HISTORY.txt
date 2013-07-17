@@ -19,6 +19,9 @@ Changelog
 - Fixed and simplified JS toggle code in folder view
   [tom_gross]
 
+- Added local copy of the images that are deprecated in Plone
+  [rristow]
+
 1.2 (2012-04-11)
 ----------------
 
