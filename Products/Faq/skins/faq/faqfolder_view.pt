@@ -85,9 +85,7 @@
         </h1>
         <div tal:replace="structure provider:plone.belowcontenttitle" />
 
-        <p tal:define="Std modules/Products.PythonScripts/standard;
-                       newline_to_br nocall:Std/newline_to_br;"
-                       tal:content="structure python:newline_to_br(context.Description())">
+        <p tal:content="structure context/text">
             Description
         </p>
 
