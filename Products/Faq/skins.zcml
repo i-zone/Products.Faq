@@ -6,4 +6,5 @@
    <!-- File System Directory Views registration -->
    <cmf:registerDirectory
        name="faq"/>
+
 </configure>
