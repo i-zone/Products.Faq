@@ -102,8 +102,7 @@
         <tal:entries repeat="entry python:[brain.getObject() for brain in entries]">
             <dt tal:define="md python:DateTime(entry.ModificationDate());
                             delay here/delay;">
-          <img i18n:attributes="title showhide_answer;alt showhide_answer" title="Show or Hide answer"
-               alt="Show or Hide answer"
+          <img i18n:attributes="title showhide_answer;" title="Show or Hide answer" alt=""
                tal:attributes="id string:icon_${repeat/entry/number};
                                onclick string:javascript:toggle('${repeat/entry/number}');
                                src string:${portal_url}/treeCollapsed.gif;
@@ -132,7 +131,7 @@
             <dt tal:define="md python:DateTime(subentry.ModificationDate());
                              delay here/delay;"
                 tal:attributes="class string:faq_${num}">
-              <img i18n:attributes="title showhide_answer" title="Show or Hide answer"
+              <img i18n:attributes="title showhide_answer" title="Show or Hide answer" alt=""
                    tal:attributes="id string:icon_${num};
                                    onclick string:javascript:toggle('${num}');
                                    src string:${portal_url}/treeCollapsed.gif;
